@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <TheHeader/>
-    <TheGame :TheGame="TheGame"/>
+    <TheGame :TheGame="TheGame" Win="Win" :Hints="Hints"/>
   </div>
 </template>
 
@@ -17,7 +17,9 @@ export default {
   },
   data(){
   return {
-    TheGame: {}
+    TheGame: {},
+    Win: false,
+    Hints: 0
   }
 },
   mounted(){
